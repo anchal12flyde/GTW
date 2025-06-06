@@ -1,6 +1,6 @@
 import Home from "@/components/Home/home";
 
-export default function (){
+export default function myHome (){
     return(
         <>
         <Home />
