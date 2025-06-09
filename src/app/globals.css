@@ -29,7 +29,8 @@ body {
    font-family: 'Inter', sans-serif;
 }
 html, body {
-  overflow-x: hidden;
+   scrollbar-width: none;
+   overflow-x: hidden;
 }
 .scrollbar-hide {
   scrollbar-width: none; /* Firefox */
