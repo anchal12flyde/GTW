@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <>
-     <div className="min-h-screen flex flex-col">
+    
       <header className="fixed top-0 left-0 w-full bg-white z-50">
         <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
           <div className="flex items-center justify-between h-16">
@@ -75,7 +75,7 @@ export default function Header() {
       </header>
      
 
-       <main className="pt-16 pb-24 min-h-screen overflow-y-auto">
+       <main className=" min-h-screen overflow-y-auto">
 
     {/* Hero Image Section */}
       <section className="relative bg-white font-inter overflow-hidden pb-0">
@@ -104,13 +104,13 @@ export default function Header() {
 
     <div className="block md:hidden px-4 -mt-56 pb-10 relative z-10">
   <div className="bg-white/30 backdrop-blur-none p-4 w-full max-w-full">
-    <h1 className="text-[clamp(2rem,7vw,2.75rem)] font-semibold text-gray-900 leading-tight">
+    <h1 className="text-[clamp(2rem,7vw,2.75rem)] font-extrabold text-gray-900 leading-tight">
       Building the<br />
       <span className="text-yellow-400 font-bold">Digital Backbone</span> of<br />
       Modern Commerce
     </h1>
     <p className="mt-3 text-[clamp(1.05rem,3.5vw,1.25rem)] text-gray-700 font-extrabold leading-snug">
-      From concept to code, commerce to<br />
+      From to code, commerce to<br />
       conversion, we design the technology<br />
       infrastructure for tomorrow’s businesses.
     </p>
@@ -123,11 +123,11 @@ export default function Header() {
       {/* Desktop Hero Text - stays overlayed */}
 <div className="hidden md:block absolute inset-x-0 bottom-28 z-10 px-8">
   <div className="max-w-7xl mx-auto">
-    <h1 className="text-5xl lg:text-6xl font-inter font-normal text-gray-800 leading-tight tracking-tight">
-      Building the <span className="text-yellow-400 font-normal">Digital Backbone</span><br />
+    <h1 className="text-5xl lg:text-6xl font-inter font-[500] text-gray-800 leading-tight tracking-tight">
+      Building the <span className="text-[#FFB100] font-[500]">Digital Backbone</span><br />
       of Modern Commerce
     </h1>
-    <p className="mt-0.5 text-lg lg:text-2xl text-gray-700 font-normal leading-snug tracking-tight">
+    <p className="mt-0.5 text-lg lg:text-2xl text-gray-700 font-[510] leading-snug tracking-tight">
       From concept to code, commerce to conversion, we design the<br />
       technology infrastructure for tomorrow’s businesses.
     </p>
@@ -153,8 +153,8 @@ export default function Header() {
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Card 1 */}
-          <div className="relative rounded-2xl overflow-hidden  transform transition-transform duration-500 hover:scale-105 h-[450px]">
-            <img src="/images/img2.png" alt="Modern Websites" className="w-full h-full object-cover" />
+          <div className="relative rounded-2xl overflow-hidden  transform transition-transform duration-500 hover:scale-105 h-[460px]">
+            <img src="/images/img2.png" alt="Modern Websites" className="w-full h-full  rounded-2xl" />
           <div className="absolute top-6 left-6 text-white text-3xl font-semibold leading-snug drop-shadow-md select-none">
             <p>Modern</p>
             <p>Websites</p>
@@ -163,8 +163,8 @@ export default function Header() {
           </div>
 
           {/* Card 2 */}
-          <div className="relative rounded-2xl overflow-hidden  transform transition-transform duration-500 hover:scale-105 h-[450px]">
-            <img src="/images/img3.png" alt="E-Commerce Infrastructure" className="w-full h-full  object-cover" />
+          <div className="relative rounded-2xl overflow-hidden  transform transition-transform duration-500 hover:scale-105 h-[460px]">
+            <img src="/images/img3.png" alt="E-Commerce Infrastructure" className="w-full h-full " />
             <div className="absolute top-6 left-6 text-white text-3xl font-semibold leading-snug drop-shadow-md">
               <p>E-Commerce</p>
               <p>Digital Infrastructure</p>
@@ -172,8 +172,8 @@ export default function Header() {
           </div>
 
           {/* Card 3 */}
-          <div className="relative rounded-2xl overflow-hidden  transform transition-transform duration-500 hover:scale-105 h-[450px]">
-            <img src="/images/img1.png" alt="Mobile Apps" className="w-full h-full object-cover" />
+          <div className="relative rounded-2xl overflow-hidden  transform transition-transform duration-500 hover:scale-105 h-[460px]">
+            <img src="/images/img1.png" alt="Mobile Apps" className="w-full h-full " />
             <div className="absolute top-6 left-6 text-white text-3xl font-semibold leading-snug drop-shadow-md">
               <p>Mobile</p>
               <p>Apps</p>
@@ -208,7 +208,7 @@ export default function Header() {
       We Build. We Digitize. We Transform.
     </h2>
 
-    <div className="max-w-6xl mx-auto px-4">
+    <div className="max-w-6xl ">
       <div className="flex flex-col md:grid md:grid-cols-3 gap-10 items-center text-center md:text-left">
         
         {/* Left Column */}
@@ -261,75 +261,89 @@ export default function Header() {
 
         {/* Section 2: Yellow with Cards */}
       <section className="bg-yellow-400 py-16 px-4">
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-4xl mb-12 text-center">
-      We build systems,
-      <span className="text-white font-medium"> not just screens.</span>
-    </h2>
+        <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-inter font-extrabold tracking-tight mb-12 text-left">
+        We build systems,
+        <span className="text-white font-semibold tracking-tight"> not just screens.</span>
+      </h2>
+
+
 
     {/* Horizontal Scroll Wrapper */}
     <div className="overflow-x-auto scrollbar-hide">
       <div className="flex flex-nowrap gap-6 px-1 pb-4">
         {/* Card 1 */}
-        <div className="bg-white rounded-2xl p-4 w-80 flex-shrink-0 transition-all duration-300 transform hover:shadow-lg hover:scale-105">
-          <div className="relative">
-            <img
-              src="/images/img5.png"
-              alt="Ecommerce"
-              className="rounded-xl mb-4 mx-auto h-50 object-cover"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button className="bg-white bg-opacity-80 rounded-full p-3 hover:scale-110 transition-transform shadow-md">
-                <svg
-                  className="w-6 h-6 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </button>
+        <div className="bg-white rounded-2xl w-80 flex-shrink-0  overflow-hidden">
+            <div className="relative rounded-2xl">
+              <img
+                src="/images/img5.png"
+                alt="Ecommerce"
+                className="w-full h-48 " // removed margins, made full-width
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <button className="bg-white bg-opacity-80 rounded-full p-3 hover:scale-110 transition-transform shadow-md">
+                  <svg
+                    className="w-6 h-6 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div className="p-4">
+              <h3 className="text-xl font-bold mb-2 text-left">Ecommerce for Scale</h3>
+              <p className="text-gray-800 text-sm mb-3 text-left">
+                Built a full-stack MERN platform for Itel Mobiles to support D2C sales,
+                stock sync, and campaign-driven demand — built to scale across India.
+              </p>
+              <a href="#" className="font-semibold text-black block text-left">
+                Read More
+              </a>
             </div>
           </div>
-          <h3 className="text-xl font-bold mb-2 text-center">Ecommerce for Scale</h3>
-          <p className="text-gray-800 text-sm mb-3 text-center">
-            Built a full-stack MERN platform for Itel Mobiles to support D2C sales, stock sync, and campaign-driven demand — built to scale across India.
-          </p>
-          <a href="#" className="font-semibold text-black block text-center">Read More</a>
-        </div>
+
 
         {/* Card 2 */}
-        <div className="bg-white rounded-2xl p-4 w-80 flex-shrink-0 transition-all duration-300 transform hover:shadow-lg hover:scale-105">
+        <div className="bg-white rounded-2xl w-80 flex-shrink-0  overflow-hidden">
           <img
             src="/images/img4.png"
             alt="Campus"
-            className="rounded-xl mb-4 mx-auto h-50 object-cover"
+            className="w-full h-48 object-cover"
           />
-          <h3 className="text-xl font-bold mb-2 text-center">A Campus Goes Digital</h3>
-          <p className="text-gray-800 text-sm mb-3 text-center">
-            Executed a full-stack digital transformation for EzStays across hostel ops, transport, meals, and finance.
-          </p>
-          <a href="#" className="font-semibold text-black block text-center">Read More</a>
+          <div className="p-4">
+            <h3 className="text-xl font-bold mb-2 text-left">A Campus Goes Digital</h3>
+            <p className="text-gray-800 text-sm mb-3 text-left">
+              Executed a full-stack digital transformation for EzStays across hostel ops, transport, meals, and finance.
+            </p>
+            <a href="#" className="font-semibold text-black block text-left">Read More</a>
+          </div>
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white rounded-2xl p-4 w-80 flex-shrink-0 transition-all duration-300 transform hover:shadow-lg hover:scale-105">
+        <div className="bg-white rounded-2xl w-80 flex-shrink-0  overflow-hidden">
           <img
             src="/images/img7.png"
             alt="Campus"
-            className="rounded-xl mb-4 mx-auto h-50 object-cover"
+            className="w-full h-48 object-cover"
           />
-          <h3 className="text-xl font-bold mb-2 text-center">A Campus Goes Digital</h3>
-          <p className="text-gray-800 text-sm mb-3 text-center">
-            Executed a full-stack digital transformation for EzStays across hostel ops, transport, meals, and finance.
-          </p>
-          <a href="#" className="font-semibold text-black block text-center">Read More</a>
+          <div className="p-4">
+            <h3 className="text-xl font-bold mb-2 text-left">A Campus Goes Digital</h3>
+            <p className="text-gray-800 text-sm mb-3 text-left">
+              Executed a full-stack digital transformation for EzStays across hostel ops, transport, meals, and finance.
+            </p>
+            <a href="#" className="font-semibold text-black block text-left">Read More</a>
+          </div>
         </div>
-        <div className="bg-white rounded-2xl p-4 w-80 flex-shrink-0 transition-all duration-300 transform hover:shadow-lg hover:scale-105">
+
+        {/* Card 4 (with play button) */}
+        <div className="bg-white rounded-2xl w-80 flex-shrink-0  overflow-hidden">
           <div className="relative">
             <img
               src="/images/img5.png"
               alt="Ecommerce"
-              className="rounded-xl mb-4 mx-auto h-50 object-cover"
+              className="w-full h-48 object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <button className="bg-white bg-opacity-80 rounded-full p-3 hover:scale-110 transition-transform shadow-md">
@@ -343,25 +357,31 @@ export default function Header() {
               </button>
             </div>
           </div>
-          <h3 className="text-xl font-bold mb-2 text-center">Ecommerce for Scale</h3>
-          <p className="text-gray-800 text-sm mb-3 text-center">
-            Built a full-stack MERN platform for Itel Mobiles to support D2C sales, stock sync, and campaign-driven demand — built to scale across India.
-          </p>
-          <a href="#" className="font-semibold text-black block text-center">Read More</a>
+          <div className="p-4">
+            <h3 className="text-xl font-bold mb-2 text-left">Ecommerce for Scale</h3>
+            <p className="text-gray-800 text-sm mb-3 text-left">
+              Built a full-stack MERN platform for Itel Mobiles to support D2C sales, stock sync, and campaign-driven demand — built to scale across India.
+            </p>
+            <a href="#" className="font-semibold text-black block text-left">Read More</a>
+          </div>
         </div>
 
-        <div className="bg-white rounded-2xl p-4 w-80 flex-shrink-0 transition-all duration-300 transform hover:shadow-lg hover:scale-105">
+        {/* Card 5 (same as Card 3, new instance) */}
+        <div className="bg-white rounded-2xl w-80 flex-shrink-0  overflow-hidden">
           <img
             src="/images/img7.png"
             alt="Campus"
-            className="rounded-xl mb-4 mx-auto h-50 object-cover"
+            className="w-full h-48 object-cover"
           />
-          <h3 className="text-xl font-bold mb-2 text-center">A Campus Goes Digital</h3>
-          <p className="text-gray-800 text-sm mb-3 text-center">
-            Executed a full-stack digital transformation for EzStays across hostel ops, transport, meals, and finance.
-          </p>
-          <a href="#" className="font-semibold text-black block text-center">Read More</a>
+          <div className="p-4">
+            <h3 className="text-xl font-bold mb-2 text-left">A Campus Goes Digital</h3>
+            <p className="text-gray-800 text-sm mb-3 text-left">
+              Executed a full-stack digital transformation for EzStays across hostel ops, transport, meals, and finance.
+            </p>
+            <a href="#" className="font-semibold text-black block text-left">Read More</a>
+          </div>
         </div>
+
 
         {/* Add more cards as needed */}
       </div>
@@ -416,7 +436,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-12">Next Steps</h2>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-88">
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
             <a
               href="#"
               className="bg-black text-white text-lg px-8 py-6 rounded-lg w-full sm:w-64 font-medium"
@@ -443,34 +463,35 @@ export default function Header() {
   {/* Footer*/}
 
      <footer className=" bottom-0 left-0 w-full bg-gray-100 text-black font-inter z-50  h-full">
-        <div className="w-full px-4 sm:px-6 lg:px-12 py-12 mx-auto max-w-7xl">
+        <div className="w-full  sm:px-6 lg:px-12 py-12 mx-auto max-w-8xl">
           {/* Top footer: logo and form */}
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-12 px-4 py-4 rounded-full bg-white">
-            <div className="flex items-center justify-center lg:justify-start w-full lg:w-auto">
-              <img src="/images/GTW-Logo.png" alt="GTW Logo" className="h-10 w-auto" />
-            </div>
-
-            <form className="flex flex-col sm:flex-row w-full max-w-md gap-2">
-              <input
-                type="email"
-                placeholder="Your Email Address"
-                className="w-full px-4 py-2 rounded-full border border-gray-300 outline-none text-sm text-gray-800"
-              />
-              <button
-                type="submit"
-                className="bg-black text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition"
-              >
-                Subscribe
-              </button>
-            </form>
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-12 px-4 py-6  rounded-full bg-white w-full">
+          <div className="flex items-center justify-center lg:justify-start w-full lg:w-1/2 ">
+            <img src="/images/GTW-Logo.png" alt="GTW Logo" className="h-10 w-auto px-8" />
           </div>
 
+          <form className="flex flex-col sm:flex-row w-full lg:w-1/2 gap-2">
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              className="w-[500px] px-4 py-2 rounded-full border border-gray-300 outline-none text-sm text-gray-950"
+            />
+            <button
+              type="submit"
+              className="bg-black text-white px-6 py-2 rounded-full text-md font-semibold hover:bg-gray-800 transition w-[150px]"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+
           {/* Footer links */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12 px-4 sm:px-6 lg:px-12">
             {['Company', 'Verticals', 'Resources', 'Industries', 'Careers', 'Legal'].map((category) => (
               <div key={category}>
-                <h4 className="font-semibold mb-3 text-gray-900">{category}</h4>
-                <ul className="space-y-2 text-gray-700">
+                <h4 className="font-extrabold mb-3 text-gray-900 text-[16px]">{category}</h4><br/>
+                <ul className="space-y-6 text-gray-950 text-[12px]">
                   <li>The GTW Vision</li>
                   <li>Our Team</li>
                   <li>The GTW Vision</li>
@@ -482,13 +503,13 @@ export default function Header() {
           </div>
 
           {/* Bottom footer info */}
-          <div className="border-t border-gray-300 pt-6 flex flex-col sm:flex-row justify-between text-sm text-gray-600">
-            <p>General Tech Works Private Limited</p>
-            <p className="mt-2 sm:mt-0">2025</p>
+          <div className="border-t border-gray-300  flex flex-col sm:flex-row justify-between text-sm text-gray-950 pt-6 mx-12  ">
+            <p >General Tech Works Private Limited</p>
+            <p className="mt-2 sm:mt-0 ">2025</p>
           </div>
         </div>
       </footer>
-      </div>
+   
             
 
 
