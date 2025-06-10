@@ -138,7 +138,7 @@ export default function Header() {
           of Modern Commerce
         </h1>
 
-          <p className="mt-0.5 text-lg lg:text-2xl text-gray-700 font-[510] leading-snug tracking-tight">
+          <p className="inter-gtw">
             From concept to code, commerce to conversion, we design the<br />
             technology infrastructure for tomorrow’s businesses.
           </p>
