@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
-
-
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-primary: 'Inter', sans-serif;
+  --text-color-dark: #313131;
+  --text-color-light: #ffffff;
 }
+
+
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -25,18 +27,45 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-   font-family: 'Inter', sans-serif;
-}
-html, body {
-   scrollbar-width: none;
-   overflow-x: hidden;
-}
-.scrollbar-hide {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
+  overflow-x: hidden;
+   font-family: 'Inter';
+   scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.heading-hero {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--text-color-dark);
+}
+
+@media (max-width: 768px) {
+  .heading-hero {
+    font-size: 36px;
+  }
+  .heading-section {
+    font-size: 28px;
+  }
+  .body-large {
+    font-size: 16px;
+  }
+}
+.body-large {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--text-color-dark);
 }

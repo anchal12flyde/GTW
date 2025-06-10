@@ -11,13 +11,13 @@ export default function Header() {
   return (
     <>
     
-      <header className="fixed top-0 left-0 w-full bg-white z-50">
+      <header className="fixed top-0 left-0 w-full bg-white z-50"> 
         <div className="max-w-7xl mx-auto px-4 lg:px-0 ">
           <div className="flex items-center justify-between h-16">
            {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
-              src="/images/GTW-Logo.png" 
+              src="/images/GTW_Logo.png" 
               alt="GTW Logo"
               className="h-10 w-auto object-contain"
             />
@@ -25,22 +25,24 @@ export default function Header() {
 
 
             {/* Desktop Nav */}
-            <nav className="hidden md:flex space-x-6">
-              <Link href="/about" className=" text-gray-600 font-semibold">Web</Link>
-              <Link href="/contact" className="text-gray-600 font-semibold">Mobile Apps</Link>
-              <Link href="/services" className="text-gray-600 font-semibold">GTW Saas Cloud</Link>
-              <Link href="/blog" className="text-gray-600 font-semibold ">Digital Transformation</Link>
-              <Link href="/expro" className="text-gray-600 font-semibold">ExPro</Link>
-            </nav>
+           <nav className="hidden md:flex space-x-8 font-medium text-[16px] text-[#313131] leading-none tracking-normal font-inter">
+            <Link href="/about" className="">Web</Link>
+            <Link href="/contact" className="">Mobile Apps</Link>
+            <Link href="/services" className="">GTW SaaS Cloud</Link>
+            <Link href="/blog" className="">Digital Transformation</Link>
+            <Link href="/expro" className="">ExPro</Link>
+          </nav>
+
 
             {/* Login Button */}
            <div className="hidden md:block">
             <Link
               href="/login"
-              className="block bg-black text-gray-300 font-semibold text-center py-2 px-8 rounded-lg transition-all duration-300 hover:bg-yellow-500 hover:text-black"
+              className="block bg-black text-white font-medium text-[20px] text-center py-3 px-7 rounded-lg leading-none tracking-normal transition-all duration-300 hover:bg-[#FFB100] hover:text-black font-inter"
             >
               Client Login
             </Link>
+
           </div>
 
 
@@ -57,19 +59,20 @@ export default function Header() {
 
           {/* Mobile Nav */}
           {isOpen && (
-            <div className="md:hidden mt-2 space-y-2 pb-4">
-              <Link href="/about" className="block text-gray-700">About Us</Link>
-              <Link href="/contact" className="block text-gray-700">Contact Us</Link>
-              <Link href="/services" className="block text-gray-700">Services</Link>
-              <Link href="/blog" className="block text-gray-700">Blog</Link>
-              <Link href="/expro" className="block text-gray-700">ExPro</Link>
-              <Link
-                href="/login"
-                className="block bg-black text-gray-600 font-semibold text-center py-2 px-4 rounded-lg hover:bg-gray-900 transition-all duration-300"
-              >
-                Client Login
-              </Link>
-            </div>
+            <div className="md:hidden mt-2 space-y-2 pb-4 font-inter text-[20px] font-medium text-[#313131] leading-none tracking-normal">
+            <Link href="/contact" className="block">Mobile Apps</Link>
+            <Link href="/services" className="block">GTW SaaS Cloud</Link>
+            <Link href="/blog" className="block">Digital Transformation</Link>
+            <Link href="/expro" className="block">ExPro</Link>
+            <Link
+              href="/login"
+              className="block bg-black text-white font-medium text-[26px] text-center py-2 px-4 rounded-lg leading-none tracking-normal hover:bg-[#FFB100] hover:text-black transition-all duration-300 font-inter"
+            >
+              Client Login
+            </Link>
+
+          </div>
+
           )}
         </div>
       </header>
@@ -101,38 +104,46 @@ export default function Header() {
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
     </div>
 
+         {/* Mobile */}
+        <div className="block md:hidden px-4 -mt-42 pb-10 relative z-10">
+          <div className="bg-white/30 backdrop-blur-none p-6 w-full max-w-full whitespace-nowrap">
+            <h1 className="font-inter font-medium text-[40px] text-[#313131] leading-none tracking-normal">
+              Building the<br />
+            
+                <span className="text-[#FFB100]">Digital Backbone</span> of
+              <br />
+               Modern Commerce
+              
+            </h1>
+           <p className="font-inter font-medium text-[18px] text-[#313131]  md:text-base md:leading-snug md:text-gray-700 md:mt-3">
+            From concept to code, commerce to<br />
+            conversion, we design the technology<br />
+            infrastructure for tomorrow’s businesses.
+          </p>
 
-    <div className="block md:hidden px-4 -mt-56 pb-10 relative z-10">
-  <div className="bg-white/30 backdrop-blur-none p-4 w-full max-w-full">
-    <h1 className="text-[clamp(2rem,7vw,2.75rem)] font-extrabold text-gray-900 leading-tight">
-      Building the<br />
-      <span className="text-yellow-400 font-bold">Digital Backbone</span> of<br />
-      Modern Commerce
-    </h1>
-    <p className="mt-3 text-[clamp(1.05rem,3.5vw,1.25rem)] text-gray-700 font-extrabold leading-snug">
-      From to code, commerce to<br />
-      conversion, we design the technology<br />
-      infrastructure for tomorrow’s businesses.
-    </p>
-  </div>
-</div>
+          </div>
+
+        </div>
+
+
 
 
 
   
       {/* Desktop Hero Text - stays overlayed */}
-<div className="hidden md:block absolute inset-x-0 bottom-28 z-10 px-8">
-  <div className="max-w-7xl mx-auto">
-    <h1 className="text-5xl lg:text-6xl font-inter font-[500] text-gray-800 leading-tight tracking-tight">
-      Building the <span className="text-[#FFB100] font-[500]">Digital Backbone</span><br />
-      of Modern Commerce
-    </h1>
-    <p className="mt-0.5 text-lg lg:text-2xl text-gray-700 font-[510] leading-snug tracking-tight">
-      From concept to code, commerce to conversion, we design the<br />
-      technology infrastructure for tomorrow’s businesses.
-    </p>
-  </div>
-</div>
+      <div className="hidden md:block absolute inset-x-0 bottom-28 z-10 px-8">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="heading-hero">
+          Building the <span className="text-[#FFB100]">Digital Backbone</span><br />
+          of Modern Commerce
+        </h1>
+
+          <p className="mt-0.5 text-lg lg:text-2xl text-gray-700 font-[510] leading-snug tracking-tight">
+            From concept to code, commerce to conversion, we design the<br />
+            technology infrastructure for tomorrow’s businesses.
+          </p>
+        </div>
+      </div>
 
     </section>
 
@@ -187,7 +198,8 @@ export default function Header() {
 
 
       
- <section className="relative bg-gray-950 bg-opacity-95 text-white py-20 px-6 sm:px-10 mt-16">
+ <section className="relative bg-gradient-to-b from-gray-950 to-gray-900 bg-opacity-95 text-white py-20 px-6 sm:px-10 mt-16">
+
  
   <div className="block md:hidden absolute inset-0 flex items-center justify-center z-0">
   <div className="flex flex-col items-center space-y-50 px-6 py-4">
@@ -203,7 +215,7 @@ export default function Header() {
 
 
 
-  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+  <div className="relative  z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
     <h2 className="text-xl sm:text-2xl lg:text-3xl mb-12 text-center lg:text-left">
       We Build. We Digitize. We Transform.
     </h2>
@@ -224,14 +236,14 @@ export default function Header() {
           
           {/* Arrow - Mobile */}
           <div className="flex justify-center items-center md:hidden my-6">
-            <svg className="w-48 h-12 text-yellow-500 animate-arrowDown" viewBox="0 0 192 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-48 h-12 text-[#FFB100] animate-arrowDown" viewBox="0 0 192 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 10L96 40L182 10" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
 
           {/* Arrow - Desktop */}
           <div className="hidden md:flex justify-center items-center my-6">
-            <svg className="w-6 h-52 text-yellow-500 animate-arrowDown" viewBox="0 0 24 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-6 h-52 text-[#FFB100]  animate-arrowDown" viewBox="0 0 24 104" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2 2L20 52L2 102" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
             </svg>
           </div>
@@ -240,13 +252,13 @@ export default function Header() {
           <div className="space-y-6 text-sm sm:text-base md:text-lg lg:text-2xl w-[550px]">
             <p>
               We help organizations rethink the way they run,<br /> by{" "}
-              <span className="text-yellow-400 font-semibold">
+              <span className="text-[#FFB100]  font-semibold">
                 replacing complexity with clarity – 
               </span>{" "}powered
               <br />
               by purpose-built platforms.
             </p>
-            <a href="#" className="underline text-gray-200 hover:text-yellow-400 font-medium text-sm sm:text-base md:text-lg inline-block">
+            <a href="#" className="underline text-gray-300 hover:text-[#FFB100]  font-[17px] text-md sm:text-xl lg:text inline-block">
               Explore Digital Transformation
             </a>
           </div>
@@ -260,7 +272,7 @@ export default function Header() {
 
 
         {/* Section 2: Yellow with Cards */}
-      <section className="bg-yellow-400 py-16 px-4">
+      <section className="bg-[#FFB100]  py-16 px-4">
         <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-inter font-extrabold tracking-tight mb-12 text-left">
         We build systems,
@@ -283,7 +295,7 @@ export default function Header() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <button className="bg-white bg-opacity-80 rounded-full p-3 hover:scale-110 transition-transform shadow-md">
                   <svg
-                    className="w-6 h-6 text-yellow-400"
+                    className="w-6 h-6 text-[#FFB100] "
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -348,7 +360,7 @@ export default function Header() {
             <div className="absolute inset-0 flex items-center justify-center">
               <button className="bg-white bg-opacity-80 rounded-full p-3 hover:scale-110 transition-transform shadow-md">
                 <svg
-                  className="w-6 h-6 text-yellow-400"
+                  className="w-6 h-6 text-[#FFB100] "
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -407,7 +419,7 @@ export default function Header() {
             ].map((title, index) => (
               <div
                 key={index}
-                className="border-b border-yellow-300 pb-6 space-y-4 sm:space-y-0 sm:flex sm:justify-between sm:items-start"
+                className="border-b border-[#FFB100]  pb-6 space-y-4 sm:space-y-0 sm:flex sm:justify-between sm:items-start"
               >
                 {/* Left Content */}
                 <div className="sm:max-w-md">
@@ -431,33 +443,33 @@ export default function Header() {
         </div>
       </section>
 
+<section className="py-16 px-4 overflow-x-hidden">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-3xl font-bold mb-12">Next Steps</h2>
 
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12">Next Steps</h2>
+    <div className="flex flex-col sm:flex-row justify-center gap-6 max-w-full">
+      <a
+        href="#"
+        className="bg-black text-white text-lg px-6 py-6 rounded-lg w-full sm:w-64 font-medium"
+      >
+        Become <br />a Client
+      </a>
+      <a
+        href="#"
+        className="bg-black text-white text-lg px-6 py-6 rounded-lg w-full sm:w-64 font-medium"
+      >
+        Join Our <br />Team
+      </a>
+      <a
+        href="#"
+        className="bg-black text-white text-lg px-6 py-6 rounded-lg w-full sm:w-64 font-medium"
+      >
+        Agency <br />Partnerships
+      </a>
+    </div>
+  </div>
+</section>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <a
-              href="#"
-              className="bg-black text-white text-lg px-8 py-6 rounded-lg w-full sm:w-64 font-medium"
-            >
-              Become <br/>a Client
-            </a>
-            <a
-              href="#"
-              className="bg-black text-white text-lg px-8 py-6 rounded-lg w-full sm:w-64 font-medium"
-            >
-              Join Our  <br/>Team
-            </a>
-            <a
-              href="#"
-              className="bg-black text-white text-lg px-8 py-6 rounded-lg w-full sm:w-64 font-medium"
-            >
-              Agency  <br/> Partnerships
-            </a>
-          </div>
-        </div>
-      </section>
 </main>
   
   {/* Footer*/}
@@ -467,22 +479,10 @@ export default function Header() {
           {/* Top footer: logo and form */}
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-12 px-4 py-6  rounded-full bg-white w-full">
           <div className="flex items-center justify-center lg:justify-start w-full lg:w-1/2 ">
-            <img src="/images/GTW-Logo.png" alt="GTW Logo" className="h-10 w-auto px-8" />
+            <img src="/images/GTW_Logo.png" alt="GTW Logo" className="h-10 w-auto px-8" />
           </div>
 
-          <form className="flex flex-col sm:flex-row w-full lg:w-1/2 gap-2">
-            <input
-              type="email"
-              placeholder="Your Email Address"
-              className="w-[500px] px-4 py-2 rounded-full border border-gray-300 outline-none text-sm text-gray-950"
-            />
-            <button
-              type="submit"
-              className="bg-black text-white px-6 py-2 rounded-full text-md font-semibold hover:bg-gray-800 transition w-[150px]"
-            >
-              Subscribe
-            </button>
-          </form>
+          
         </div>
 
 
