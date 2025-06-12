@@ -400,7 +400,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 640px) {
   .industry-tag {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 0;
   }
 }
@@ -480,7 +480,7 @@ body::-webkit-scrollbar {
   font-size: 17px;
   color: #000000;
   letter-spacing: 0em;
-  line-height: 0;
+  line-height: 0;                
   margin-top: 15;
 }
 .footer-list {
@@ -497,9 +497,14 @@ body::-webkit-scrollbar {
   font-size: 15px;
   color: #000000;
   letter-spacing: 0em;
-  line-height: 0;
+  line-height: 0.7em;
 }
 
+@media (max-width: 640px) {
+  .company-name {
+    font-size: 13px; 
+  }
+}
 
 .body-large {
   font-family: var(--font-primary);

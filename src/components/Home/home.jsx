@@ -269,7 +269,7 @@ const toggleMenu = () => {
         </section>
 
      <section className="gradient-yellow-section px-4 py-16 ">
-        <div className="max-w-7xl mx-auto ml-8 sm:ml-28">
+        <div className="max-w-7xl mx-auto ml-6 sm:ml-28">
        <div className="text-left max-w-2xl mb-8  sm:block">
           <h2 className="heading-systems">
           <span className="text-black ">We build </span>
@@ -423,7 +423,7 @@ const toggleMenu = () => {
   
 
       <section className="py-12 px-4 ">
-  <div className="max-w-7xl mx-auto lg:px-0">
+  <div className="max-w-7xl mx-auto lg:px-0 ml-6 sm:ml-28">
     <h2 className="heading-systems text-black">Industries We Power</h2>
 
     <div className="space-y-10 mt-12">
@@ -494,7 +494,7 @@ const toggleMenu = () => {
 
 
      <footer className=" bottom-0 left-0 w-full bg-gray-100 text-black font-inter z-50  h-full">
-        <div className="w-full  sm:px-6 lg:px-18 py-10 mx-auto max-w-8xl">        
+        <div className="w-full  sm:px-6 lg:px-18 py-10 mx-auto max-w-8xl ">        
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-12 px-4 py-6 rounded-full bg-white w-full">
           <div className="flex items-center justify-center lg:justify-start w-full lg:w-1/2">
             <img src="/images/GTW_Logo.png" alt="GTW Logo" className="h-10 w-auto px-8" />
@@ -514,7 +514,7 @@ const toggleMenu = () => {
 
 
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12 px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12 px-4 sm:px-6 lg:px-12 ml-6 sm:ml-28">
             {['Company', 'Verticals', 'Resources', 'Industries', 'Careers', 'Legal'].map((category) => (
               <div key={category}>
                 <h4 className="category-heading mb-3 ">{category}</h4><br/>
