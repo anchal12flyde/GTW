@@ -1,11 +1,11 @@
-import Header from "@/components/Home/home";
+import Home from "@/components/Home/home";
 
 
 export default function myHome (){
     return(
         <>
         
-        <Header />
+        <Home />
     
         </>
        

@@ -1,80 +1,22 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu } from 'lucide-react';
+import  Header from './Folder/Header'
+import Next_Steps from './Folder/Next_Steps'
+import Footer from './Folder/Footer'
 
 
+export default function Home() {
 
-export default function Header() {
 
-  const [isOpen, setIsOpen] = useState(false);
-
-const toggleMenu = () => {
-  setIsOpen(!isOpen);
-};
   return (
     <>
-   <header className="w-full sticky top-0 bg-white shadow-md z-50 transition-all duration-300 
-                   md:relative md:bg-transparent md:shadow-none md:top-auto">
-      <div className="max-w-7xl mx-auto px-4 lg:px-0">
-          <div className="flex items-center justify-between h-18">
-            
-            {/* Logo */}
-            <Link href="/" className="flex items-center">
-              <img
-                src="/images/GTW_Logo.png"
-                alt="GTW Logo"
-                className="h-10 w-auto object-contain"
-              />
-            </Link>
-
-          
-            <nav className="hidden md:flex navbar gap-8 mx-12 ml-46">
-              <Link href="/about">Web</Link>
-              <Link href="/contact">Mobile Apps</Link>
-              <Link href="/services">GTW SaaS Cloud</Link>
-              <Link href="/blog">Digital Transformation</Link>
-              <Link href="/expro">ExPro</Link>
-            </nav>
-
-          
-          <div className="hidden md:block">
-              <Link href="/login" className="client-login">
-                Client Login
-              </Link>
-            </div>
-
-
-
-            <button onClick={toggleMenu} className="md:hidden flex flex-col justify-center gap-[6px] w-8 h-8 focus:outline-none">
-              <span className="block h-[2px] w-[24px] bg-gray-700 rounded-sm ml-[6px]"></span>
-              <span className="block h-[2px] w-[30px] bg-gray-700 rounded-sm"></span> {/* Full-width middle line */}
-              <span className="block h-[2px] w-[24px] bg-gray-700 rounded-sm ml-[6px]"></span>
-            </button>
-
-          </div>
-
-          
-          {isOpen && (
-            <div className="mobile-nav">
-              <Link href="/about" className="block">Web</Link>
-              <Link href="/contact" className="block">Mobile Apps</Link>
-              <Link href="/services" className="block">GTW SaaS Cloud</Link>
-              <Link href="/blog" className="block">Digital Transformation</Link>
-              <Link href="/expro" className="block">ExPro</Link>
-            <Link href="/login" className="client-login">
-                Client Login
-              </Link>
-
-            </div>
-          )}
-        </div>
-      </header> 
+   <Header/>
 
     {/* Hero Section */}
       <section className="relative bg-white font-inter overflow-hidden pb-0">
       {/* Desktop  */}
-      <div className="hidden md:block relative w-full h-[750px]">
+      <div className="hidden md:block relative w-full h-[750px] ">
         <img
           src="/images/hero2.png"
           alt="Digital Transformation Banner"
@@ -94,8 +36,8 @@ const toggleMenu = () => {
     </div>
 
          {/* Mobile */}
-        <div className="block md:hidden px-4 -mt-42 pb-10 relative z-10">
-          <div className="bg-white/30 backdrop-blur-none p-6 w-full max-w-full whitespace-nowrap">
+        <div className="block md:hidden px-4 -mt-42 pb-10 relative z-10  ">
+          <div className="bg-white/30 backdrop-blur-none p-6 w-full max-w-full whitespace-nowrap  sm:ml-40">
             <h1 className="heading-hero-mobile">
               Building the<br />
             
@@ -116,7 +58,7 @@ const toggleMenu = () => {
 
      
       <div className="hidden md:block absolute inset-x-0 bottom-28 z-10 px-8 ">
-        <div className="max-w-7xl mx-auto  ">
+        <div className="max-w-7xl mx-auto  ml-4 sm:ml-20">
           <h1 className="heading-hero">
           Building the <span className="text-[#FFB100]">Digital Backbone</span><br />
           of Modern Commerce
@@ -133,7 +75,7 @@ const toggleMenu = () => {
 
 
       <section className="px-4 sm:px-6 lg:px-8 bg-white mb-16 pt-0">
-          <div className="max-w-7xl mx-auto px-4 lg:px-0">
+          <div className="max-w-7xl mx-auto px-4 lg:px-0 ml-2 sm:ml-22">
             {/* Heading */}
           <div className="text-left max-w-2xl mb-8 hidden sm:block">
           <h2 className="heading-systems">
@@ -243,7 +185,6 @@ const toggleMenu = () => {
                       <path d="M2 2L20 52L2 102" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
                     </svg>
                   </div>
-
                 {/* Right Column */}
                     <div className="w-full max-w-[550px] mb-30 md:mb-0">
                     <p className="right-column-text ">
@@ -269,7 +210,7 @@ const toggleMenu = () => {
         </section>
 
      <section className="gradient-yellow-section px-4 py-16 ">
-        <div className="max-w-7xl mx-auto ml-6 sm:ml-28">
+        <div className="max-w-7xl mx-auto ml-4 sm:ml-26">
        <div className="text-left max-w-2xl mb-8  sm:block">
           <h2 className="heading-systems">
           <span className="text-black ">We build </span>
@@ -422,134 +363,53 @@ const toggleMenu = () => {
 
   
 
-      <section className="py-12 px-4 ">
-  <div className="max-w-7xl mx-auto lg:px-0 ml-6 sm:ml-28">
-    <h2 className="heading-systems text-black">Industries We Power</h2>
+            <section className="py-12 px-4 ">
+        <div className="max-w-7xl mx-auto lg:px-0 ml-4 sm:ml-28">
+          <h2 className="heading-systems text-black">Industries We Power</h2>
 
-    <div className="space-y-10 mt-12">
-      {[
-        'Commerce & Consumer Products',
-        'Operation & Infrastructure',
-        'Education & Knowledge',
-        'Services & Professional Firms',
-        'Services & Professional Firms',
-      ].map((title, index) => (
-       <div
-          key={index}
-          className="space-y-4 sm:space-y-0 sm:flex sm:justify-between sm:items-start sm:border-b sm:border-[#FFB100] sm:pb-6"
-        >
-          
-          <div className="sm:max-w">
-            <h3 className="ecom-heading">{title}</h3>
-            <p className="industry-description mt-4">
-              We enable digital sales, customer journeys, and D2C operations.
-            </p>
-          </div>
-          <div className="block sm:hidden border-b border-[#FFB100] w-full mt-2"></div>
-                    
-          <div className="w-full sm:w-auto">
-            <div className="flex flex-wrap gap-3 sm:gap-6 mt-7">
-              {Array(4).fill(0).map((_, i) => (
-                <span key={i} className="industry-tag">
-                  E-commerce
-                </span>
-              ))}
-            </div>
-          
-           
-          </div>
-        </div>
-
-      ))}
-    </div>
-  </div>
-</section>
-
-
-        <section className="py-16 px-4 overflow-x-hidden">
-          <div className="max-w-7xl mx-auto text-center">
-            <h2 className="heading-systems text-black mb-10">Next Steps</h2>
-
-            <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-full">
-             <a href="#" className="become-client"  >
-              Become  a<br />  Client
-            </a>
-
-
-              <a
-                href="#"
-                className="become-client"
+          <div className="space-y-10 mt-12">
+            {[
+              'Commerce & Consumer Products',
+              'Operation & Infrastructure',
+              'Education & Knowledge',
+              'Services & Professional Firms',
+              'Services & Professional Firms',
+            ].map((title, index) => (
+            <div
+                key={index}
+                className="space-y-4 sm:space-y-0 sm:flex sm:justify-between sm:items-start sm:border-b sm:border-[#FFB100] sm:pb-6"
               >
-                Join Our <br />Team
-              </a>
-              <a
-                href="#"
-                className="become-client"
-              >
-                Agency <br />Partnerships
-              </a>
-            </div>
-          </div>
-        </section>
-
-
-     <footer className=" bottom-0 left-0 w-full bg-gray-100 text-black font-inter z-50  h-full">
-        <div className="w-full  sm:px-6 lg:px-18 py-10 mx-auto max-w-8xl ">        
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-12 px-4 py-6 rounded-full bg-white w-full">
-          <div className="flex items-center justify-center lg:justify-start w-full lg:w-1/2">
-            <img src="/images/GTW_Logo.png" alt="GTW Logo" className="h-10 w-auto px-8" />
-          </div>
-          <form className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-1/2 px-4 lg:px-0">
-            <input
-              type="email"
-              placeholder="Your Email Address"
-              className="email-input"
-            />
-           <button type="submit" className="subscribe-button">
-            Subscribe
-          </button>
-          </form>
-        </div>
-
-
-
-          
-         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12 px-4 sm:px-6 lg:px-12 ml-6 sm:ml-0">
-            {['Company', 'Verticals', 'Resources', 'Industries', 'Careers', 'Legal'].map((category) => (
-              <div key={category}>
-                <h4 className="category-heading mb-3 ">{category}</h4><br/>
-                <ul className="footer-list mt-3 ">
-                  <li>The GTW Vision</li>
-                  <li>Our Team</li>
-                  <li>The GTW Vision</li>
-                  <li>Our Team</li>
-                  <li>The GTW Vision</li>
-                </ul>
-
+                
+                <div className="sm:max-w">
+                  <h3 className="ecom-heading">{title}</h3>
+                  <p className="industry-description mt-4">
+                    We enable digital sales, customer journeys, and D2C operations.
+                  </p>
+                </div>
+                <div className="block sm:hidden border-b border-[#FFB100] w-full mt-2"></div>
+                          
+                <div className="w-full sm:w-auto">
+                  <div className="flex flex-wrap gap-3 sm:gap-6 mt-7">
+                    {Array(4).fill(0).map((_, i) => (
+                      <span key={i} className="industry-tag">
+                        E-commerce
+                      </span>
+                    ))}
+                  </div>
+                
+                
+                </div>
               </div>
+
             ))}
           </div>
-
-          {/* Bottom footer info */}
-          <div className="border-t border-gray-300  flex flex-col sm:flex-row justify-between text-sm text-gray-950 pt-8 mx-12  ">
-           <p className="company-name">General Tech Works Private Limited</p>
-            <p className="mt-2 sm:mt-0 company-name ">2025</p>
-          </div>
         </div>
-      </footer>
-   
-            
+      </section>
+
+   <Next_Steps/>
 
 
-
-
-
-
-
-
-
-
-
+  <Footer/>
 
 
     </>
