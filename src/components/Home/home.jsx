@@ -12,73 +12,68 @@ export default function Header() {
 const toggleMenu = () => {
   setIsOpen(!isOpen);
 };
-  
-
   return (
     <>
-<header className="relative w-full bg-transparent shadow-none transition-all duration-300">
+   <header className="w-full sticky top-0 bg-white shadow-md z-50 transition-all duration-300 
+                   md:relative md:bg-transparent md:shadow-none md:top-auto">
+      <div className="max-w-7xl mx-auto px-4 lg:px-0">
+          <div className="flex items-center justify-between h-18">
+            
+            {/* Logo */}
+            <Link href="/" className="flex items-center">
+              <img
+                src="/images/GTW_Logo.png"
+                alt="GTW Logo"
+                className="h-10 w-auto object-contain"
+              />
+            </Link>
 
-  <div className="max-w-7xl mx-auto px-4 lg:px-0">
-    <div className="flex items-center justify-between h-18">
-      
-      {/* Logo */}
-      <Link href="/" className="flex items-center">
-        <img
-          src="/images/GTW_Logo.png"
-          alt="GTW Logo"
-          className="h-10 w-auto object-contain"
-        />
-      </Link>
+          
+            <nav className="hidden md:flex navbar gap-8 mx-12 ml-46">
+              <Link href="/about">Web</Link>
+              <Link href="/contact">Mobile Apps</Link>
+              <Link href="/services">GTW SaaS Cloud</Link>
+              <Link href="/blog">Digital Transformation</Link>
+              <Link href="/expro">ExPro</Link>
+            </nav>
 
-     
-      <nav className="hidden md:flex navbar gap-8 mx-12 ml-46">
-        <Link href="/about">Web</Link>
-        <Link href="/contact">Mobile Apps</Link>
-        <Link href="/services">GTW SaaS Cloud</Link>
-        <Link href="/blog">Digital Transformation</Link>
-        <Link href="/expro">ExPro</Link>
-      </nav>
-
-    
-     <div className="hidden md:block">
-        <Link href="/login" className="client-login">
-          Client Login
-        </Link>
-      </div>
+          
+          <div className="hidden md:block">
+              <Link href="/login" className="client-login">
+                Client Login
+              </Link>
+            </div>
 
 
 
-      <button onClick={toggleMenu} className="md:hidden flex flex-col justify-center gap-[6px] w-8 h-8 focus:outline-none">
-        <span className="block h-[2px] w-[24px] bg-gray-700 rounded-sm ml-[6px]"></span>
-        <span className="block h-[2px] w-[30px] bg-gray-700 rounded-sm"></span> {/* Full-width middle line */}
-        <span className="block h-[2px] w-[24px] bg-gray-700 rounded-sm ml-[6px]"></span>
-      </button>
+            <button onClick={toggleMenu} className="md:hidden flex flex-col justify-center gap-[6px] w-8 h-8 focus:outline-none">
+              <span className="block h-[2px] w-[24px] bg-gray-700 rounded-sm ml-[6px]"></span>
+              <span className="block h-[2px] w-[30px] bg-gray-700 rounded-sm"></span> {/* Full-width middle line */}
+              <span className="block h-[2px] w-[24px] bg-gray-700 rounded-sm ml-[6px]"></span>
+            </button>
 
-    </div>
+          </div>
 
-    
-    {isOpen && (
-      <div className="mobile-nav">
-        <Link href="/about" className="block">Web</Link>
-        <Link href="/contact" className="block">Mobile Apps</Link>
-        <Link href="/services" className="block">GTW SaaS Cloud</Link>
-        <Link href="/blog" className="block">Digital Transformation</Link>
-        <Link href="/expro" className="block">ExPro</Link>
-       <Link href="/login" className="client-login">
-          Client Login
-        </Link>
+          
+          {isOpen && (
+            <div className="mobile-nav">
+              <Link href="/about" className="block">Web</Link>
+              <Link href="/contact" className="block">Mobile Apps</Link>
+              <Link href="/services" className="block">GTW SaaS Cloud</Link>
+              <Link href="/blog" className="block">Digital Transformation</Link>
+              <Link href="/expro" className="block">ExPro</Link>
+            <Link href="/login" className="client-login">
+                Client Login
+              </Link>
 
-      </div>
-    )}
-  </div>
-</header>
+            </div>
+          )}
+        </div>
+      </header> 
 
-    
-      
-
-    {/* Hero Image Section */}
+    {/* Hero Section */}
       <section className="relative bg-white font-inter overflow-hidden pb-0">
-      {/* Desktop Image */}
+      {/* Desktop  */}
       <div className="hidden md:block relative w-full h-[750px]">
         <img
           src="/images/hero2.png"
@@ -87,7 +82,7 @@ const toggleMenu = () => {
         />
       </div>
       <div className="block md:hidden relative w-full h-[750px] overflow-hidden">
-      {/* Background Image */}
+
       <img
         src="/images/Hero1.png"
         alt="Digital Transformation Mobile Banner"
@@ -201,80 +196,80 @@ const toggleMenu = () => {
     </section>
 
   
-   <section className="gradient-section text-white py-20 px-6 sm:px-10 mt-16 min-h-[300px] md:min-h-[600px] lg:min-h-[700px]">
-      <div className="block md:hidden absolute inset-0 flex items-center justify-center">
-      <div className="flex flex-col items-center space-y-50 px-6 py-4">
-        <h2 className="text-[20vw] text-white/5 font-bold leading-none tracking-wider">
-          From
-        </h2>
-        <h2 className="text-[20vw] text-white/5 font-bold leading-none tracking-wider">
-          To
-        </h2>
-      </div>
-    </div>
-
-    <div className="relative  z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 sm:py-12 -mb-12">
-        <h2 className="section-heading mb-18   text-center lg:text-left">
-          We Build. We Digitize. We Transform.
-        </h2>
-
-
-        <div className="max-w-6xl ">
-          <div className="flex flex-col md:grid md:grid-cols-3 gap-10 items-center text-center md:text-left">
-            
-            {/* Left Column */}
-           <div className="space-y-6 mt-4">
-            <p className="left-column-text">Legacy systems</p>
-            <p className="left-column-text">Manual operations</p>
-            <p className="left-column-text">Scattered tech</p>
-          </div>
-
-
-           
-            <div className=" md:col-span-2 flex flex-col md:flex-row items-center justify-center gap-42">
-              
-             
-              <div className="flex justify-center items-center md:hidden my-6">
-                <svg className="w-50 h-12 text-[#FFB100] animate-arrowDown" viewBox="0 0 192 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 10L96 40L182 10" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              {/* Arrow - Desktop */}
-              <div className="hidden md:flex justify-center items-center my-6">
-                <svg className="w-6 h-52 text-[#FFB100]  animate-arrowDown" viewBox="0 0 24 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 2L20 52L2 102" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
-                </svg>
-              </div>
-
-             {/* Right Column */}
-                <div className="w-full max-w-[680px]">
-                  <p className="right-column-text">
-                    We help organizations rethink the way they run, by{" "}
-                    <span className="text-[#FFB100]">
-                      replacing complexity with clarity –
-                    </span>{" "}
-                    powered by purpose-built platforms.
-                  </p><br/>
-                 <a href="#" className="explore-link">
-                  Explore Digital Transformation
-                </a>
-
-                </div>
-
-
-
-            </div>
+      <section className="gradient-section text-white px-6 sm:px-10 mt-10 
+      md:min-h-[200px] lg:min-h-[500px] py-2 md:py-12">
+          <div className="block md:hidden absolute inset-0 flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-50 px-6 py-4">
+            <h2 className="text-[25vw] text-white/5 font-600 leading-none tracking-wider">
+              From
+            </h2>
+            <h2 className="text-[25vw] text-white/5 font-600 leading-none tracking-wider">
+              To
+            </h2>
           </div>
         </div>
-      </div>
-    </section>
+
+        <div className="relative  z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 sm:py-12 -mb-12">
+            <h2 className="section-heading mt-25 md:mt-0 mb-18 text-center lg:text-left">
+              We Build. We Digitize. We Transform.
+            </h2>
 
 
 
-        {/* Section 2: Yellow with Cards */}
-      <section className="bg-[#FFB100]  py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+            <div className="max-w-6xl ">
+              <div className="flex flex-col md:grid md:grid-cols-3 gap-10 items-center text-center md:text-left">
+                
+                {/* Left Column */}
+              <div className="space-y-6 mt-4">
+                <p className="left-column-text">Legacy systems</p>
+                <p className="left-column-text">Manual operations</p>
+                <p className="left-column-text">Scattered tech</p>
+              </div>
+
+
+              
+                <div className=" md:col-span-2 flex flex-col md:flex-row items-center justify-center gap-30">
+                  
+                
+                  <div className="flex justify-center items-center md:hidden my-6">
+                    <svg className="w-50 h-12 text-[#FFB100] animate-arrowDown" viewBox="0 0 192 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 10L96 40L182 10" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+
+                  {/* Arrow - Desktop */}
+                  <div className="hidden md:flex justify-center items-center my-6">
+                    <svg className="w-6 h-52 text-[#FFB100]  animate-arrowDown" viewBox="0 0 24 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 2L20 52L2 102" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+                    </svg>
+                  </div>
+
+                {/* Right Column */}
+                    <div className="w-full max-w-[550px] mb-30 md:mb-0">
+                    <p className="right-column-text ">
+                  We help organizations rethink the way they run, by{" "}
+                  <span className="text-[#FFB100]">
+                    replacing complexity with clarity –
+                  </span>{" "}
+                  powered by purpose-built platforms.
+                </p>
+
+                <a href="#" className="explore-link pt-12 md:pt-12 block">
+                  Explore Digital Transformation
+                </a>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     <section className="gradient-yellow-section px-4 py-16 ">
+        <div className="max-w-7xl mx-auto ml-8 sm:ml-28">
        <div className="text-left max-w-2xl mb-8  sm:block">
           <h2 className="heading-systems">
           <span className="text-black ">We build </span>
@@ -422,70 +417,74 @@ const toggleMenu = () => {
       </div>
     </div>
   </div>
-</section>
+    </section>
 
 
   
 
       <section className="py-12 px-4 ">
-        <div className="max-w-7xl mx-auto lg:px-0">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-10 sm:mb-12">Industries We Empower</h2>
+  <div className="max-w-7xl mx-auto lg:px-0">
+    <h2 className="heading-systems text-black">Industries We Power</h2>
 
-          {/* List */}
-          <div className="space-y-10">
-            {[
-              'Commerce & Consumer Products',
-              'Operation & Infrastructure',
-              'Education & Knowledge',
-              'Services & Professional Firms',
-              'Services & Professional Firms',
-            ].map((title, index) => (
-              <div
-                key={index}
-                className="border-b border-[#FFB100]  pb-6 space-y-4 sm:space-y-0 sm:flex sm:justify-between sm:items-start"
-              >
-                {/* Left Content */}
-                <div className="sm:max-w-md">
-                  <h3 className="text-lg sm:text-xl font-semibold">{title}</h3>
-                  <p className="text-gray-600 text-sm sm:text-base">
-                    We enable digital sales, customer journeys, and D2C operations.
-                  </p>
-                </div>
-
-                {/* Right Tags */}
-                <div className="flex flex-wrap gap-3 sm:gap-6">
-                  {Array(4).fill(0).map((_, i) => (
-                    <span key={i} className="font-semibold text-sm sm:text-base">
-                      E-commerce
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
+    <div className="space-y-10 mt-12">
+      {[
+        'Commerce & Consumer Products',
+        'Operation & Infrastructure',
+        'Education & Knowledge',
+        'Services & Professional Firms',
+        'Services & Professional Firms',
+      ].map((title, index) => (
+       <div
+          key={index}
+          className="space-y-4 sm:space-y-0 sm:flex sm:justify-between sm:items-start sm:border-b sm:border-[#FFB100] sm:pb-6"
+        >
+          
+          <div className="sm:max-w">
+            <h3 className="ecom-heading">{title}</h3>
+            <p className="industry-description mt-4">
+              We enable digital sales, customer journeys, and D2C operations.
+            </p>
+          </div>
+          <div className="block sm:hidden border-b border-[#FFB100] w-full mt-2"></div>
+                    
+          <div className="w-full sm:w-auto">
+            <div className="flex flex-wrap gap-3 sm:gap-6 mt-7">
+              {Array(4).fill(0).map((_, i) => (
+                <span key={i} className="industry-tag">
+                  E-commerce
+                </span>
+              ))}
+            </div>
+          
+           
           </div>
         </div>
-      </section>
+
+      ))}
+    </div>
+  </div>
+</section>
+
 
         <section className="py-16 px-4 overflow-x-hidden">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-12">Next Steps</h2>
+            <h2 className="heading-systems text-black mb-10">Next Steps</h2>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-6 max-w-full">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-full">
+             <a href="#" className="become-client"  >
+              Become  a<br />  Client
+            </a>
+
+
               <a
                 href="#"
-                className="bg-black text-white text-lg px-6 py-6 rounded-lg w-full sm:w-64 font-medium"
-              >
-                Become <br />a Client
-              </a>
-              <a
-                href="#"
-                className="bg-black text-white text-lg px-6 py-6 rounded-lg w-full sm:w-64 font-medium"
+                className="become-client"
               >
                 Join Our <br />Team
               </a>
               <a
                 href="#"
-                className="bg-black text-white text-lg px-6 py-6 rounded-lg w-full sm:w-64 font-medium"
+                className="become-client"
               >
                 Agency <br />Partnerships
               </a>
@@ -494,56 +493,47 @@ const toggleMenu = () => {
         </section>
 
 
-  
-  {/* Footer*/}
-
      <footer className=" bottom-0 left-0 w-full bg-gray-100 text-black font-inter z-50  h-full">
-        <div className="w-full  sm:px-6 lg:px-18 py-10 mx-auto max-w-8xl">
-          {/* Top footer: logo and form */}
+        <div className="w-full  sm:px-6 lg:px-18 py-10 mx-auto max-w-8xl">        
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-12 px-4 py-6 rounded-full bg-white w-full">
-          {/* Logo */}
           <div className="flex items-center justify-center lg:justify-start w-full lg:w-1/2">
             <img src="/images/GTW_Logo.png" alt="GTW Logo" className="h-10 w-auto px-8" />
           </div>
-
-          {/* Email Input and Subscribe Button */}
           <form className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-1/2 px-4 lg:px-0">
             <input
               type="email"
               placeholder="Your Email Address"
               className="email-input"
             />
-            <button
-              type="submit"
-              className="subscribe-button"
-            >
-              Subscribe
-            </button>
+           <button type="submit" className="subscribe-button">
+            Subscribe
+          </button>
           </form>
         </div>
 
 
 
-          {/* Footer links */}
+          
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12 px-4 sm:px-6 lg:px-12">
             {['Company', 'Verticals', 'Resources', 'Industries', 'Careers', 'Legal'].map((category) => (
               <div key={category}>
-                <h4 className="font-extrabold mb-3 text-gray-900 text-[16px]">{category}</h4><br/>
-                <ul className="space-y-6 text-gray-950 text-[12px]">
+                <h4 className="category-heading mb-3 ">{category}</h4><br/>
+                <ul className="footer-list mt-3 ">
                   <li>The GTW Vision</li>
                   <li>Our Team</li>
                   <li>The GTW Vision</li>
                   <li>Our Team</li>
                   <li>The GTW Vision</li>
                 </ul>
+
               </div>
             ))}
           </div>
 
           {/* Bottom footer info */}
-          <div className="border-t border-gray-300  flex flex-col sm:flex-row justify-between text-sm text-gray-950 pt-6 mx-12  ">
-            <p >General Tech Works Private Limited</p>
-            <p className="mt-2 sm:mt-0 ">2025</p>
+          <div className="border-t border-gray-300  flex flex-col sm:flex-row justify-between text-sm text-gray-950 pt-8 mx-12  ">
+           <p className="company-name">General Tech Works Private Limited</p>
+            <p className="mt-2 sm:mt-0 company-name ">2025</p>
           </div>
         </div>
       </footer>
