@@ -1,15 +1,11 @@
 'use client'
 import { useState } from 'react'
-import Link from 'next/link'
-
 
 export default function Footer() {
-
-  
+    
   return (
 
-
-<footer className=" bottom-0 left-0 w-full bg-gray-100 text-black font-inter z-50  h-full">
+      <footer className=" bottom-0 left-0 w-full bg-gray-100 text-black font-inter z-50  h-full">
         <div className="w-full  sm:px-6 lg:px-18 py-10 mx-auto max-w-8xl ">        
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-12 px-4 py-6 rounded-full bg-white w-full">
           <div className="flex items-center justify-center lg:justify-start w-full lg:w-1/2">
@@ -30,7 +26,7 @@ export default function Footer() {
 
 
           
-         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12 px-4 sm:px-6 lg:px-12 ml-10 sm:ml-0">
+         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12 px-4 sm:px-6 lg:px-12 ml-10 sm:ml-2">
             {['Company', 'Verticals', 'Resources', 'Industries', 'Careers', 'Legal'].map((category) => (
               <div key={category}>
                 <h4 className="category-heading mb-3 ">{category}</h4><br/>

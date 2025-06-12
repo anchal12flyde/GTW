@@ -25,19 +25,22 @@ export default function Home() {
       </div>
       <div className="block md:hidden relative w-full h-[750px] overflow-hidden">
 
-      <img
-        src="/images/Hero1.png"
-        alt="Digital Transformation Mobile Banner"
-        className="w-full h-full object-cover filter blur-none scale-100 opacity-40"
-      />
+    
+  <img
+    src="/images/Hero1.png"
+    alt="Digital Transformation Mobile Banner"
+    className="relative  w-full h-[450px]  filter blur-none scale-80 opacity-55"
+  />
 
-      
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+ 
+  <div className="absolute bottom-0 left-0 w-full h-20 "></div>
+
+
     </div>
 
          {/* Mobile */}
-        <div className="block md:hidden px-4 -mt-42 pb-10 relative z-10  ">
-          <div className="bg-white/30 backdrop-blur-none p-6 w-full max-w-full whitespace-nowrap  sm:ml-40">
+        <div className="block md:hidden px-4 -mt-99 pb-9 relative z-10  ">
+          <div className="  p-6 w-full max-w-full whitespace-nowrap  sm:ml-40">
             <h1 className="heading-hero-mobile">
               Building the<br />
             
