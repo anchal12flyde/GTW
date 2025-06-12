@@ -514,7 +514,7 @@ const toggleMenu = () => {
 
 
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12 px-4 sm:px-6 lg:px-12 ml-6 sm:ml-28">
+         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-sm mb-12 px-4 sm:px-6 lg:px-12 ml-6 sm:ml-0">
             {['Company', 'Verticals', 'Resources', 'Industries', 'Careers', 'Legal'].map((category) => (
               <div key={category}>
                 <h4 className="category-heading mb-3 ">{category}</h4><br/>
