@@ -6,10 +6,6 @@
   --text-color-light: #ffffff;
 }
 
-
-
-
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -40,15 +36,15 @@ html, body {
 
 
 body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none;   
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari, Opera */
+  display: none;             
 }
 
 
@@ -433,8 +429,6 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 }
-
-
 .email-input {
   font-family: 'Inter', sans-serif;
   font-weight: 500; 
@@ -506,10 +500,79 @@ body::-webkit-scrollbar {
   }
 }
 
-.body-large {
-  font-family: var(--font-primary);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.6;
-  color: var(--text-color-dark);
+/* Mobile Apps */
+
+.mobile-header-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700; 
+  font-size: 60px;
+  line-height: 1.2;
 }
+
+.mobile-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; 
+  font-size: 28px;
+  line-height: 1.2em;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.mobile-divider {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-header-title,
+  .mobile-subtitle {
+    text-align: left; 
+  }
+
+  .mobile-divider {
+    display: block;
+    height: 78px;
+    border-left: 2px solid #FFB100;
+    margin: 0 2rem;
+  }
+}
+
+.responsive-card {
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(1, 1, 1, 1);
+  border-radius: 1rem; /* rounded-2xl */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0; 
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 450px;
+}
+
+.responsive-card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  gap: 1.8rem;
+  padding: 3rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 640px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+

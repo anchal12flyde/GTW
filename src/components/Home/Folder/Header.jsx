@@ -25,7 +25,7 @@ export default function Header() {
 
           <nav className="hidden md:flex navbar gap-8 mx-12 ml-46">
             <Link href="/about">Web</Link>
-            <Link href="/contact">Mobile Apps</Link>
+            <Link href="/mobile_apps">Mobile Apps</Link>
             <Link href="/services">GTW SaaS Cloud</Link>
             <Link href="/blog">Digital Transformation</Link>
             <Link href="/expro">ExPro</Link>
@@ -50,7 +50,7 @@ export default function Header() {
         {isOpen && (
           <div className="mobile-nav">
             <Link href="/about" className="block">Web</Link>
-            <Link href="/contact" className="block">Mobile Apps</Link>
+            <Link href="/mobile_apps" className="block">Mobile Apps</Link>
             <Link href="/services" className="block">GTW SaaS Cloud</Link>
             <Link href="/blog" className="block">Digital Transformation</Link>
             <Link href="/expro" className="block">ExPro</Link>
