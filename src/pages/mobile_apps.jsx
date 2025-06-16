@@ -95,4 +95,3 @@ export default function mobile_apps() {
        </>
      )
    }
-   

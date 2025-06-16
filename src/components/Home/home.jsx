@@ -363,11 +363,15 @@ export default function Home() {
   </div>
     </section>
 
-     <section className="py-12 px-4 ">
+   
+
+  
+
+            <section className="py-12 px-4 ">
         <div className="max-w-7xl mx-auto lg:px-0 ml-4 sm:ml-28">
           <h2 className="heading-systems text-black">Industries We Power</h2>
 
-          <div className="space-y-10 mt-12 pr-6 lg:pr-30 sm:pr-60">
+          <div className="space-y-10 mt-12">
             {[
               'Commerce & Consumer Products',
               'Operation & Infrastructure',
