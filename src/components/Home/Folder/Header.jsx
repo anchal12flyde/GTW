@@ -22,13 +22,14 @@ export default function Header() {
               className="h-10 w-auto object-contain"
             />
           </Link>
-          <nav className="hidden md:flex navbar gap-8 mx-12 ml-46">
-            <Link href="/about">Web</Link>
-            <Link href="/mobile_apps">Mobile Apps</Link>
-            <Link href="/services">GTW SaaS Cloud</Link>
-            <Link href="/blog">Digital Transformation</Link>
-            <Link href="/expro">ExPro</Link>
-          </nav>
+         <nav className="hidden md:flex navbar gap-8 mx-12 ml-46 custom-navbar">
+          <Link className="nav-link" href="/about">Web</Link>
+          <Link className="nav-link" href="/mobile_apps">Mobile Apps</Link>
+          <Link className="nav-link" href="/services">GTW SaaS Cloud</Link>
+          <Link className="nav-link" href="/blog">Digital Transformation</Link>
+          <Link className="nav-link" href="/expro">ExPro</Link>
+        </nav>
+
           <div className="hidden md:block">
             <Link href="/login" className="client-login">
               Client Login
@@ -45,12 +46,12 @@ export default function Header() {
         </div>
 
         {isOpen && (
-          <div className="mobile-nav">
-            <Link href="/about" className="block">Web</Link>
-            <Link href="/mobile_apps" className="block">Mobile Apps</Link>
-            <Link href="/services" className="block">GTW SaaS Cloud</Link>
-            <Link href="/blog" className="block">Digital Transformation</Link>
-            <Link href="/expro" className="block">ExPro</Link>
+          <div className="mobile-nav custom-navbar">
+            <Link  href="/about" className="block nav-link">Web</Link>
+            <Link href="/mobile_apps" className="block nav-link">Mobile Apps</Link>
+            <Link href="/services" className="block nav-link">GTW SaaS Cloud</Link>
+            <Link href="/blog" className="block nav-link">Digital Transformation</Link>
+            <Link href="/expro" className="block nav-link">ExPro</Link>
             <Link href="/login" className="client-login">
               Client Login
             </Link>
