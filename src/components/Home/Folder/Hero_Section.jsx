@@ -17,7 +17,7 @@ export default function Hero_Section() {
       </div>
       <div className="block md:hidden relative w-full h-[750px] overflow-hidden">
         <img
-            src="/images/Hero1.png"
+            src="/images/hero1.png"
             alt="Digital Transformation Mobile Banner"
             className="relative  w-full h-[450px]  filter blur-none scale-80 opacity-55"
         /> 
