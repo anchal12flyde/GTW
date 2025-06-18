@@ -22,7 +22,7 @@ export default function Header() {
               className="h-10 w-auto object-contain"
             />
           </Link>
-         <nav className="hidden md:flex navbar gap-8 ml-76 custom-navbar">
+         <nav className="hidden md:flex navbar gap-8  custom-navbar">
           <Link className="nav-link" href="#">Web</Link>
           <Link className="nav-link" href="/mobile_apps">Mobile Apps</Link>
           <Link className="nav-link" href="#">GTW SaaS Cloud</Link>

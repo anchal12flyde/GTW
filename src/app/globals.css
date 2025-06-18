@@ -157,6 +157,11 @@ body::-webkit-scrollbar {
   animation: fadeIn 0.7s ease-in-out forwards;
   transition: all 0.7s ease-in-out;
 }
+@media (min-width: 768px) {
+  .custom-navbar {
+    margin-left: 16rem; 
+  }
+}
 
 .nav-link {
   transition: all 0.3s ease;
@@ -167,8 +172,7 @@ body::-webkit-scrollbar {
 
 .nav-link:hover {
   color: #FFB100;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  
 }
 @keyframes fadeInUp {
   0% {
