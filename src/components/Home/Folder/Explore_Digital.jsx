@@ -8,7 +8,7 @@ export default function Next_Steps() {
     <>
     <section className="gradient-section text-white px-6 sm:px-10 mt-10 
       md:min-h-[200px] lg:min-h-[500px] py-2 md:py-12">
-          <div className=" block md:hidden absolute inset-0 flex items-center justify-center">
+          <div className=" block md:hidden absolute inset-0 flex items-center justify-center ">
           <div className="flex flex-col items-center space-y-50 px-6 py-4">
             <h2 className="text-[25vw] text-white/5 font-600 leading-none tracking-wider">
               From
@@ -67,8 +67,9 @@ export default function Next_Steps() {
             </div>
           </div>
         </section>
-         <section className="gradient-yellow-section px-4 py-16 ">
-        <div className="max-w-7xl mx-auto ml-4 sm:ml-26 pr-6 lg:pr-30 sm:pr-60">
+
+    <section className="gradient-yellow-section px-4 py-16 ">
+        <div className="max-w-7xl mx-auto  pr-6 lg:pr-30 sm:pr-60">
        <div className="text-left max-w-2xl mb-8  sm:block">
           <h2 className="heading-systems">
           <span className="text-black ">We build </span>
@@ -76,12 +77,7 @@ export default function Next_Steps() {
           <span className="text-black ">,</span>
           <span className="text-white"> not just screens.</span>
         </h2>
-
         </div>
-
-
-
-    {/* Horizontal Scroll Wrapper */}
     <div className="overflow-x-auto scrollbar-hide">
       <div className="flex flex-nowrap gap-12 px-1 pb-4">
         {/* Card 1 */}

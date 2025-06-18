@@ -12,7 +12,6 @@ export default function mobile_apps() {
   return (
     <>
    <Header/>
-
           <section className="mobile-section flex flex-col md:flex-row items-start justify-start py-30 px-12 md:px-12 gap-4 md:gap-0 mx-auto pr-6 lg:pr-30 sm:pr-60 ml-0 sm:ml-16">
             <h2 className="mobile-header-title mr-26">Mobile Apps</h2>
             <div className="mobile-divider"></div>
@@ -21,8 +20,6 @@ export default function mobile_apps() {
               and Impress.
             </p>
           </section>
-
-
         <section className="card-container-wrapper  ml-8 sm:ml-14">
           <div className="card-container scrollable-mobile">
             <div className="responsive-card"></div>
@@ -31,11 +28,9 @@ export default function mobile_apps() {
             <div className="responsive-card"></div>
           </div>
         </section>
- 
-
-        <section class="usecases-section bg-gray-50  ">
-          <h2 class="usecases-heading ml-8 sm:ml-28">
-            Usecases <span class="usecases-subheading">(Quick Deployment)</span>
+        <section className="usecases-section bg-gray-50  ">
+          <h2 className="usecases-heading ml-8 sm:ml-28">
+            Usecases <span className="usecases-subheading">(Quick Deployment)</span>
           </h2>
          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-y-6 ml-8 sm:ml-30">
           {[

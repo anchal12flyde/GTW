@@ -8,8 +8,7 @@ export default function Hero_Section() {
     <>
    
       <section className="relative bg-white font-inter overflow-hidden pb-0">
-    
-      <div className="hidden md:block relative w-full h-[650px] ">
+      <div className="hidden md:block relative w-full h-[700px] ">
         <img
           src="/images/hero2.png"
           alt="Digital Transformation Banner"
@@ -17,30 +16,23 @@ export default function Hero_Section() {
         />
       </div>
       <div className="block md:hidden relative w-full h-[750px] overflow-hidden">
-
-    
         <img
             src="/images/Hero1.png"
             alt="Digital Transformation Mobile Banner"
             className="relative  w-full h-[450px]  filter blur-none scale-80 opacity-55"
-        />
-
-        
+        /> 
         <div className="absolute bottom-0 left-0 w-full h-20 "></div>
-
-
     </div>
         <div className="block md:hidden px-4 -mt-99 pb-9 relative z-10  ">
           <div className="  p-6 w-full max-w-full whitespace-nowrap  sm:ml-40">
-            <h1 className="heading-hero-mobile">
+            <h1 className="heading-hero-mobile fade-in-up delay-200">
               Building the<br />
-            
+          
                 <span className="text-[#FFB100]">Digital Backbone</span> of
               <br />
-               Modern Commerce
-              
+               Modern Commerce 
             </h1>
-           <p className="heading-subtitle-mobile">
+           <p className="heading-subtitle-mobile fade-in-up delay-200">
             From concept to code, commerce to<br />
             conversion, we design the technology<br />
             infrastructure for tomorrow’s businesses.
